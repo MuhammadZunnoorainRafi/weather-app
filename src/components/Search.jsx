@@ -3,7 +3,7 @@ import WeatherContext from '../context/WeatherContext';
 
 function Search() {
   const { getSearchResult } = useContext(WeatherContext);
-  const { error, info } = useContext(WeatherContext);
+  const { info } = useContext(WeatherContext);
   const [text, setText] = useState('');
   const handleSearchChange = (e) => {
     setText(e.target.value);
